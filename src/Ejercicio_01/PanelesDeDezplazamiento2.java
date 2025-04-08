@@ -4,19 +4,16 @@
  */
 package Ejercicio_01;
 
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Osvaldo
  */
-public class FileChoser extends javax.swing.JFrame {
+public class PanelesDeDezplazamiento2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form PanelesDesplazamiento
+     * Creates new form PanelesDeDezplazamiento2
      */
-    public FileChoser() {
+    public PanelesDeDezplazamiento2() {
         initComponents();
     }
 
@@ -29,13 +26,7 @@ public class FileChoser extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        elegirFichero = new javax.swing.JFileChooser();
         jPanel1 = new javax.swing.JPanel();
-        barraMenus = new javax.swing.JMenuBar();
-        menuArchivo = new javax.swing.JMenu();
-        menuAbrir = new javax.swing.JMenuItem();
-        SeparadorMenuArchivo = new javax.swing.JPopupMenu.Separator();
-        menuSalir = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,30 +36,12 @@ public class FileChoser extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 921, Short.MAX_VALUE)
+            .addGap(0, 837, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 609, Short.MAX_VALUE)
+            .addGap(0, 653, Short.MAX_VALUE)
         );
-
-        menuArchivo.setText("Archivo");
-
-        menuAbrir.setText("Abrir");
-        menuAbrir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuAbrirActionPerformed(evt);
-            }
-        });
-        menuArchivo.add(menuAbrir);
-        menuArchivo.add(SeparadorMenuArchivo);
-
-        menuSalir.setText("Salir");
-        menuArchivo.add(menuSalir);
-
-        barraMenus.add(menuArchivo);
-
-        setJMenuBar(barraMenus);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,21 +56,6 @@ public class FileChoser extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void menuAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuAbrirActionPerformed
-        int resp;
-
-        resp = elegirFichero.showOpenDialog(this);
-
-        if (resp == JFileChooser.APPROVE_OPTION) {
-            JOptionPane.showMessageDialog(null, elegirFichero.getSelectedFile().toString());
-
-        } else if (resp == JFileChooser.CANCEL_OPTION) {
-
-            JOptionPane.showMessageDialog(null, "Se pulsó la opción Cancelar");
-        }
-
-    }//GEN-LAST:event_menuAbrirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -116,32 +74,25 @@ public class FileChoser extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FileChoser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PanelesDeDezplazamiento2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FileChoser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PanelesDeDezplazamiento2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FileChoser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PanelesDeDezplazamiento2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FileChoser.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PanelesDeDezplazamiento2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FileChoser().setVisible(true);
+                new PanelesDeDezplazamiento2().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPopupMenu.Separator SeparadorMenuArchivo;
-    private javax.swing.JMenuBar barraMenus;
-    private javax.swing.JFileChooser elegirFichero;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JMenuItem menuAbrir;
-    private javax.swing.JMenu menuArchivo;
-    private javax.swing.JMenuItem menuSalir;
     // End of variables declaration//GEN-END:variables
 }
