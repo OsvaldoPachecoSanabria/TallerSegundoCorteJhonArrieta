@@ -30,6 +30,23 @@ public class VentanaCalculos extends javax.swing.JFrame {
         s = a+b;
         etiResultado.setText(" " + s );
     }
+    
+    void Restar(){
+        String cad1, cad2;
+        int a,b,r;
+        
+        cad1 = txtNumero1.getText();
+        cad2 = txtNumero2.getText();
+        a = Integer.parseInt(cad1);
+        b = Integer.parseInt(cad2);
+        r = a - b ;
+        etiResultado.setText(" " + r);
+    }
+    
+    void Borrar(){
+        txtNumero1.setText(" ");
+        txtNumero2.setText(" ");
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -227,15 +244,15 @@ public class VentanaCalculos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void menuRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuRestarActionPerformed
-        // TODO add your handling code here:
+        Borrar();
     }//GEN-LAST:event_menuRestarActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
-
+        Borrar();
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btnRestarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestarActionPerformed
-        // TODO add your handling code here:
+         Restar();
     }//GEN-LAST:event_btnRestarActionPerformed
 
     private void btnSumarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSumarActionPerformed
